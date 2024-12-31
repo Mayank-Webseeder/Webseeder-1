@@ -10,11 +10,11 @@ const Categories = () => {
   ];
 
   return (
-    <div className="w-full max-w-5xl mx-auto">
-      <h2 className="mb-6 text-xl font-semibold text-center text-gray-800"><b>All Categories</b></h2>
-      <div className="grid grid-cols-4 gap-4">
+    <div className="w-full max-w-5xl mx-auto px-4 sm:px-0">
+      <h2 className="mb-6 text-xl sm:text-2xl font-semibold text-center text-gray-800"><b>All Categories</b></h2>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {categories.map((category, index) => (
-          <div key={index} className={`p-4 border rounded-lg ${category.bg} shadow`}>
+          <div key={index} className={`p-4 border rounded-lg ${category.bg} shadow flex flex-col items-center text-center`}>
             <FontAwesomeIcon icon={category.icon} className="w-8 h-8 mb-4 text-gray-700" />
             <h3 className="text-lg font-semibold">{category.title}</h3>
             <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
